@@ -1,0 +1,6 @@
+@pokemonAPI_HostAddress =   
+
+GET {{pokemonAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
