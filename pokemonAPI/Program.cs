@@ -28,6 +28,9 @@ builder.Services.AddCors(options =>
         });
 });
 
+//for swagger: dotnet run --launch-profile https
+builder.WebHost.UseUrls("https://localhost:7035", "http://localhost:5066");
+
 var app = builder.Build();
 
 app.UseCors("AllowAllOrigins");
